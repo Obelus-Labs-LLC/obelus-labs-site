@@ -1,0 +1,9 @@
+CLAUDE.md
+node_modules/
+.next/
+.env
+.env.local
+.env.production
+.serena/
+.claude/
+out/
