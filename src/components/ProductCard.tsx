@@ -39,19 +39,24 @@ export default function ProductCard({ product }: { product: Product }) {
         {product.description}
       </p>
 
-      {/* Action Link */}
-      <a
-        href={product.link.href}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="relative inline-flex items-center gap-2 font-mono text-lg text-white transition-colors duration-300 group-hover:text-brand-cyan"
-      >
-        {product.link.text}
-        <ArrowRight
-          size={20}
-          className="transition-transform duration-300 group-hover:translate-x-1"
-        />
-      </a>
+      {/* Action Links */}
+      <div className="relative flex flex-wrap items-center gap-x-6 gap-y-2">
+        {product.links.map((link) => (
+          <a
+            key={link.href}
+            href={link.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 font-mono text-lg text-white transition-colors duration-300 hover:text-brand-cyan"
+          >
+            {link.text}
+            <ArrowRight
+              size={16}
+              className="transition-transform duration-300 group-hover:translate-x-0.5"
+            />
+          </a>
+        ))}
+      </div>
 
       {/* Tech Decoration */}
       <Cpu

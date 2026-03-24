@@ -4,6 +4,15 @@ node_modules/
 .env
 .env.local
 .env.production
+.env.*.local
 .serena/
 .claude/
 out/
+dist/
+build/
+.DS_Store
+*.log
+*.swp
+*.swo
+.vscode/
+.idea/
