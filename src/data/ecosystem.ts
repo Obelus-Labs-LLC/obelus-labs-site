@@ -7,31 +7,31 @@ export interface EcosystemItem {
 
 export const ecosystemItems: EcosystemItem[] = [
   {
-    title: "Loom",
-    tag: "Runtime",
+    title: "FabricOS",
+    tag: "Kernel",
     description:
-      "The orchestration layer that weaves microservices together into unified workflows with built-in observability.",
-    metric: "Target: sub-50ms inter-service latency",
+      "Bare-metal x86_64 microkernel with capability-based security, V8 JavaScript runtime, and AI governance built into the kernel.",
+    metric: "58K lines of Rust, 27 stress gates passing",
+  },
+  {
+    title: "Loom",
+    tag: "Browser",
+    description:
+      "Bare-metal browser engine built from scratch. HTML/CSS parsing, flexbox/grid layout, Canvas, WebSocket, and Service Workers — all running on FabricOS.",
+    metric: "1.9MB binary, 16 crates",
   },
   {
     title: "Covenant",
-    tag: "Contracts",
+    tag: "AI Layer",
     description:
-      "Schema-driven API contracts that enforce type safety and versioning across the entire FabricOS stack.",
-    metric: "Zero-drift contract validation",
+      "Constitutional AI governance system with persistent identity, value-driven decision making, and agent orchestration. Ships with the OS, runs on local hardware.",
+    metric: "1,172 tests passing, 27 phases complete",
   },
   {
-    title: "Genesis",
-    tag: "Scaffolding",
+    title: "Weave",
+    tag: "Desktop Shell",
     description:
-      "Project bootstrapper that generates production-ready services from templates with CI/CD pipelines pre-configured.",
-    metric: "0 to deploy-ready in under 5 minutes",
-  },
-  {
-    title: "HedgeBrain",
-    tag: "Intelligence",
-    description:
-      "ML-powered analytics engine for processing large-scale datasets with automated feature engineering and model selection.",
-    metric: "Adaptive model retraining pipeline",
+      "Native desktop compositor and window manager for FabricOS. Window management, theming, built-in applications, and accessibility — all in a 123KB binary.",
+    metric: "9,612 lines of bare-metal Rust",
   },
 ];
