@@ -23,7 +23,7 @@ export default function ProductCard({ product }: { product: Product }) {
 
       {/* Status Indicator */}
       <div className="absolute top-8 right-8 xl:top-10 xl:right-10 flex items-center gap-2">
-        <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse-dot" />
+        <div className={`w-2 h-2 rounded-full ${product.status === "Coming Soon" ? "bg-yellow-500" : product.status === "Proprietary" ? "bg-blue-500" : "bg-green-500"} animate-pulse-dot`} />
         <span className="font-mono text-xs md:text-sm text-zinc-500 uppercase tracking-[0.1em]">
           {product.status}
         </span>
